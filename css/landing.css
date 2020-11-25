@@ -1,0 +1,108 @@
+
+
+
+   body{
+       background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../image/img/img\ \(5\).jpg);
+       background-size: cover;
+       background-position: center;
+       color: #fff !important;
+       font-family: 'Lato', sans-serif !important;
+       font-size: 24px !important;
+       background-attachment: fixed;
+       width: 100%;
+       
+       
+   }
+   .navbar-brand h2{
+    font-family: 'Grenze Gotisch', cursive;
+    padding: 8px;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 10px !important;
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 10px;
+    
+}
+#landing h2{
+    text-transform: uppercase;
+    margin-top: 3rem;
+    text-shadow: 4px 6px 10px rgb(0, 0, 0);
+    position: relative;
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes heading{
+    0%{
+        left:-2000px ;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+
+    #landing p{
+        animation: para;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        position: relative;
+    }
+
+@keyframes para{
+    0%{
+        right:-2000px ;
+    }
+    100%{
+        right: 0;
+    }
+}
+
+.row{
+    position: relative;
+    top: 140px;
+}
+
+
+.btn{
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+@keyframes btn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media */
+@media(max-width:600px){
+    #landing h2{
+        font-size: 2.7rem;
+    }
+    #landing p{
+        font-size: 18px;
+    }
+    .row{
+        top: 100px;
+    }
+}
+
+
+
